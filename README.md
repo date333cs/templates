@@ -10,3 +10,6 @@ templates of things
 - [beginning.py](beginning.py)
 
 
+### gnuplot
+- [script.gp](script.gp)
+
