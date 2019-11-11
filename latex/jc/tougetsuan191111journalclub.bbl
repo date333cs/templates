@@ -1,0 +1,26 @@
+\begin{thebibliography}{1}
+
+\bibitem{foldiak91a}
+P.~{F\"{o}ldi\'{a}k}.
+\newblock Learning invariance from transformation sequences.
+\newblock {\em Neural Computation}, 3:194--200, 1991.
+
+\bibitem{sgeman88a}
+S.~Geman.
+\newblock Stochastic relaxation methods for image restoration and expert
+  systems.
+\newblock In E.~G.~J and C.~R. Smith eds., {\em Maximum-Entropy and Bayesian
+  Methods in Science and Engineering}, Vol.~2, pp. 265--311. Kluwer Academic
+  Publisher, 1988.
+
+\bibitem{hopfield83a}
+J.~J. Hopfield, D.~I. Feinstein, and R.~G. Palmer.
+\newblock {`Unlearning'} has a stabilizing effect in collective memories.
+\newblock {\em Nature}, 304:158--159, 1983.
+
+\bibitem{sabour2017a}
+S.~Sabour, N.~Frosst, and G.~E. Hinton.
+\newblock Dynamic routing between capsules.
+\newblock {\tt https://arxiv.org/abs/1710.09829}, 2017.
+
+\end{thebibliography}

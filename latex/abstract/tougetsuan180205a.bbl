@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+
+\bibitem{amari89a}
+甘利.
+\newblock 神経回路モデルとコネクショニズム.
+\newblock 東京大学出版会, 東京, 1989.
+
+\bibitem{ohtsuki2008a}
+大槻, 間瀬, 篠原.
+\newblock {PC}を用いたコーヒー豆選別装置の良否判定手法の検討.
+\newblock 釧路工業高等専門学校紀要, 42:57--63, 2008.
+
+\bibitem{radford2015a}
+A.~Radford, L.~Metz, and S.~Chintala.
+\newblock Unsupervised representation learning with deep convolutional
+  generative adversarial networks.
+\newblock {\tt http://arxiv.org/abs/1511.06434}, 2015.
+
+\end{thebibliography}

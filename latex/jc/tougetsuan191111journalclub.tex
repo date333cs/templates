@@ -1,0 +1,81 @@
+%#! platex %f && dvipdfmx -d 5 tougetsuan191111journalclub
+%
+%
+% 手で，コンパイルする方法
+% platex tougetsuan180205a
+% pbibtex tougetsuan180205a
+% platex tougetsuan180205a
+% dvipdfmx -d 5 tougetsuan180205a
+%
+\documentclass[a4paper,twocolumn,twoside,10pt]{jarticle}
+\usepackage{nidanfloat} %% add
+\usepackage{graphics}
+\usepackage[dvips,usenames]{color}  % for revise color
+\usepackage{graphicx}
+\usepackage{plain}
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{float}
+%フロート環境とその前後の本文とのスペース
+\setlength\floatsep{0pt} %ページ上部あるいは下部に出力されるフロートとフロートの間の距離
+\setlength\intextsep{8pt} %ページの途中に出力されるフロートとその前後の本文との距離
+%\setlength\textfloatsep{0pt} %ページ上部のフロートと本文，および本文と
+%ページ下部のフロートとの距離
+\setcounter{page}{13}
+\topmargin = -15mm
+\oddsidemargin = 0mm
+\evensidemargin = -10mm
+\textwidth = 162mm
+\textheight = 250mm
+\columnsep = 10mm
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\headrulewidth}{0pt}
+\bmdefine{\bx}{x}
+
+
+
+\begin{document}
+\lhead{}
+\rhead{}
+\rhead{2019年11月12日}
+% \begin{twocolumn}
+\twocolumn[
+\begin{center}
+ {\large
+ \newblock
+ {\gt 情報工学セミナー 論文紹介} \vspace{5mm}\\
+P.~{F\"{o}ldi\'{a}k}. \\
+ Learning invariance from transformation sequences\\
+\newblock {\em Neural Computation}, 3:194--200, 1991.
+ }
+\vspace{3mm}  \\
+% {\large 宮崎大学　工学部　情報システム工学科}\vspace{2mm} \\
+{\large 発表者： 67140770  桃月庵 あられ} \vspace{10mm}\\
+\end{center}]
+
+%\input{titles}
+\input{introduction}  % はじめに
+\input{methods}  % 手法
+%\rhead{}
+%\input{experiment}  % 実験
+\input{results}  % 結果
+%\input{summary}  % 要約
+
+
+%%%% 参考文献 %%%
+
+\section{参考文献の書き方}
+参考文献は，
+本文中で必ず引用する\cite{hopfield83a}．
+本文で引用していないものを
+参考文献のリストには記述しない\cite{foldiak91a,sgeman88a,sabour2017a}．
+
+\bibliographystyle{jabbrv}
+% \bibliographystyle{sieicej}
+\bibliography{irl_bibs_2019.bib}
+
+
+% \rhead{}  % 2枚目以降に日付が出ないようにする．
+\end{document}
