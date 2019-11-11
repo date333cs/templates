@@ -1,6 +1,8 @@
 # templates
 templates of things 
 
+### LaTeX
+- [LaTeX](latex)
 
 ### C
 - [beginning.c](beginning.c)
