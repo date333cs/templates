@@ -1,7 +1,7 @@
-%#! platex %f && dvipdfmx -d 5 tougetsuan191111journalclub
+﻿%#! platex %f && dvipdfmx -d 5 tougetsuan191111journalclub
 %
 %
-% $B<j$G!$%3%s%Q%$%k$9$kJ}K!(B
+% 手で，コンパイルする方法
 % platex tougetsuan180205a
 % pbibtex tougetsuan180205a
 % platex tougetsuan180205a
@@ -18,11 +18,11 @@
 \usepackage{amssymb}
 \usepackage{bm}
 \usepackage{float}
-%$B%U%m!<%H4D6-$H$=$NA08e$NK\J8$H$N%9%Z!<%9(B
-\setlength\floatsep{0pt} %$B%Z!<%8>eIt$"$k$$$O2<It$K=PNO$5$l$k%U%m!<%H$H%U%m!<%H$N4V$N5wN%(B
-\setlength\intextsep{8pt} %$B%Z!<%8$NESCf$K=PNO$5$l$k%U%m!<%H$H$=$NA08e$NK\J8$H$N5wN%(B
-%\setlength\textfloatsep{0pt} %$B%Z!<%8>eIt$N%U%m!<%H$HK\J8!$$*$h$SK\J8$H(B
-%$B%Z!<%82<It$N%U%m!<%H$H$N5wN%(B
+%フロート環境とその前後の本文とのスペース
+\setlength\floatsep{0pt} %ページ上部あるいは下部に出力されるフロートとフロートの間の距離
+\setlength\intextsep{8pt} %ページの途中に出力されるフロートとその前後の本文との距離
+%\setlength\textfloatsep{0pt} %ページ上部のフロートと本文，および本文と
+%ページ下部のフロートとの距離
 \setcounter{page}{13}
 \topmargin = -15mm
 \oddsidemargin = 0mm
@@ -39,43 +39,43 @@
 \begin{document}
 \lhead{}
 \rhead{}
-\rhead{2019$BG/(B11$B7n(B12$BF|(B}
+\rhead{2019年11月12日}
 % \begin{twocolumn}
 \twocolumn[
 \begin{center}
  {\large
  \newblock
- {\gt $B>pJs9)3X%;%_%J!<(B $BO@J8>R2p(B} \vspace{5mm}\\
+ {\gt 情報工学セミナー 論文紹介} \vspace{5mm}\\
 P.~{F\"{o}ldi\'{a}k}. \\
  Learning invariance from transformation sequences\\
 \newblock {\em Neural Computation}, 3:194--200, 1991.
  }
 \vspace{3mm}  \\
-% {\large $B5\:jBg3X!!9)3XIt!!>pJs%7%9%F%`9)3X2J(B}\vspace{2mm} \\
-{\large $BH/I=<T!'(B 67140770  $BEm7n0C(B $B$"$i$l(B} \vspace{10mm}\\
+% {\large 宮崎大学　工学部　情報システム工学科}\vspace{2mm} \\
+{\large 発表者： 67140770  桃月庵 あられ} \vspace{10mm}\\
 \end{center}]
 
 %\input{titles}
-\input{introduction}  % $B$O$8$a$K(B
-\input{methods}  % $B<jK!(B
+\input{introduction}  % はじめに
+\input{methods}  % 手法
 %\rhead{}
-%\input{experiment}  % $B<B83(B
-\input{results}  % $B7k2L(B
-%\input{summary}  % $BMWLs(B
+%\input{experiment}  % 実験
+\input{results}  % 結果
+%\input{summary}  % 要約
 
 
-%%%% $B;29MJ88%(B %%%
+%%%% 参考文献 %%%
 
-\section{$B;29MJ88%$N=q$-J}(B}
-$B;29MJ88%$O!$(B
-$BK\J8Cf$GI,$:0zMQ$9$k(B\cite{hopfield83a}$B!%(B
-$BK\J8$G0zMQ$7$F$$$J$$$b$N$r(B
-$B;29MJ88%$N%j%9%H$K$O5-=R$7$J$$(B\cite{foldiak91a,sgeman88a,sabour2017a}$B!%(B
+\section{参考文献の書き方}
+参考文献は，
+本文中で必ず引用する\cite{hopfield83a}．
+本文で引用していないものを
+参考文献のリストには記述しない\cite{foldiak91a,sgeman88a,sabour2017a}．
 
 \bibliographystyle{jabbrv}
 % \bibliographystyle{sieicej}
 \bibliography{irl_bibs_2019.bib}
 
 
-% \rhead{}  % 2$BKgL\0J9_$KF|IU$,=P$J$$$h$&$K$9$k!%(B
+% \rhead{}  % 2枚目以降に日付が出ないようにする．
 \end{document}
